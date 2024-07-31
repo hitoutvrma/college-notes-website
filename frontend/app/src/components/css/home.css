@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.headings{
+  /* color:white; */
+  color: var(--font-heading-color);
+  font-size: 6vh;
+  padding-left: 7%;
+  padding-right: 7%;
+  /* display: flex; */
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+.whole-home{
+    padding-top: 20.5vh;
+}
+#wrapper-body {
+  height: 100%;
+  /* margin-left: 25px */
+  width: 100%;
+  flex-wrap: wraps;
+  display: flex;
+  /* justify-content: center; */
+}
+.container-body {
+  margin:10px;
+  width: 90%;
+  flex-wrap: wrap;
+  display: flex;
+  row-gap: 20px;
+  column-gap: 90px;
+  justify-content:center;  /* change here if you wants to change the space between the cards */
+}
+/* Global styles */
+.div-body {
+  margin: 0px;
+  padding: 0;
+  width: 300px;
+  border-radius: 0%;
+}
+
+/* Card styles */
+.card-body {
+  background-color: var(--secondary-color);
+  /* opacity: 70%; */
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: 1px;
+  height: 44vh;
+  border-color: rgb(68, 68, 68);
+  /* border-color: white; */
+  text-align: center;
+  padding: 15px;
+  width: 360px;
+  cursor: pointer;
+}
+.card-body:hover  {
+  border-color: red; /* Change border color to white on hover */
+}
+/* Illustration styles */
+.ilustration-body {
+  margin: 30px;
+}
+
+.ilustration-body lottie-player {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  /* box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1),
+    -20px -20px 20px rgba(255, 255, 255, 0.1); */
+}
+
+/* Heading styles */
+.h3-body {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: var(--text-color); 
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+/* Paragraph styles */
+.p-body {
+  font-family: var(--primary-font);
+  /* margin: 5000px; */
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: var(--text-color); 
+  margin:60px auto 10px auto;
+  /* margin-bottom: 10px; */
+  max-width: 80%;
+}
+
+/* Button styles */
+.button-body {
+  font-family: var(--primary-font);
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 15px 80px;
+  position:static;
+  border-radius: 25px;
+  color: var(--text-color);
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(68, 68, 68);
+  margin: 30px 0;
+  outline: none;
+  cursor: pointer;
+  background-color:var(--button-color);
+}
+
+/* button:active {
+  transform: scale(0.9);
+  box-shadow: inset -1px -1px 3px rgba(129, 199, 132, 1),
+    -20px -20px 20px rgba(255, 255, 255, 0);
+} */
+a{
+  text-decoration: none;
+}
+
+
+/* Honey Singh (Honey Singh)
+Baadshah... Choot volume 1
+
+Kenday pechayian pindaan ney teree mari
+Saaday lund ney we khichee ey tyaari
+Fudi teri aj ley kay jaoon
+Jey nai liti tey main jatt na kwahoon
+
+Kenday pechayian pindaan ney teree mari
+Saaday lund ney we khichee ey tyaari
+Fudi teri aj ley kay jaoon
+Jey nai liti tey main jatt na kwahoon
+
+Aja teri choot maroon
+Tere sir se chudne ka bhoot utaroon
+Chodne ke baad tujhe jutey maroon
+Tere mooh main apna lauda dey key
+Moot maroon (yeah)
+
+Kar doon teri fuddi kharab
+Merey jesa koi nahin meree bhudi kharab
+Terey baad tere post
+Bas yahi kaam kaaj mera
+Kar doon ga khush tujhe
+Luraa ley key naach mera
+
+(Honey Singh & Baadshah)
+Choda hoga tujh ko hazaroon ney
+Mehngay mehngay kamroon mein
+Lambi caroon mein
+Bollywood key baray baray sitroon ney
+Per merey lund jeesa dum naa bicharoon mein
+
+Mein karoon din raat ek
+Tu Guzar mere saath ek raat dekh
+Terey jesey maine toree ek raat mein
+Aazma key dekh ley, dum kitna hai baat mein
+
+Kenday pechayian pindaan ney teree mari
+Saaday lun ney we khichee ey tyaari
+Fudi teri aj ley kay jaoon
+Jey nai liti tey main jatt na kwahoon
+
+Gora badaan tera patli kamar
+Solaan, sitraan saal ke umar
+Rehti tip top... sunti hip hop
+Ley key chaloon tujh ko main candy shop
+
+Ch.ch.choos mera lura
+Aja choos mera lura
+Chaat merey tatte jaise aaloo ka pakoora
+To hai choot ke rani
+Main hoon lodon ka raja
+Aja aja mere rani meri bansuri bajaja
+
+Thoda uuper thoda neechey
+Zara haat to bataa
+Dekh ne dey laal fudi zara jhat to hata
+Moon khool apna mera naam to chilaa
+Baadshah, baadshah keh key gaand to hilaa
+
+Honey Singh
+
+Lun.lun.lun utey
+
+Honey Singh
+
+Lun utey laya appan sanday da tail
+Chood chood ker doon mein fudi teri fail
+Putt putt mommey tere waday kardoon
+Kano sharmawey elay lun phar too
+
+Oey gaal kar to
+Main tah bada paad doon
+Laa lei barian nu kundi booha bund kar to
+Merey lun da waar jiwen chaley talwaar
+Aj cheer do mein teri patiala salwar
+
+Maar maar chupey tenu pai gaye si chaskey
+Hun mare chika jadoon payaa wich kas ke
+Aja lun teh to beja tera pose banawaan
+Aj nai kaal nai roj banawaan
+
+Khoono Khoon Hoje kachi jive dul gayi dava
+Chap chap marey kasey jatt sari sari raat
+Oh mera naa Honey Singh rati batiyaan bujhwaan
+Nawi gadeyaan chalawaan naley fudiyaan sujaawaan
+
+Kenday pechayian pindaan ney teree mari
+Saaday lun ney we khichee ey tyaari
+Fudi teri aj ley kay jaoon
+Jey nai liti tey main jatt na kwahoon
+
+Kenday pechayian pindaan ney teree mari
+Saaday lun ney we khichee ey tyaari
+Fudi teri aj ley kay jaoon
+Jey nai liti tey main jatt na kwahoon
+
+Choot
+If you can do this hip hop
+Here we are
+The Choot from Honey Singh
+This is Choot exclusively for you
+Honey Singh & Baadshah
+
+Aja teri Choot maroon
+Tere sir se chudne ka bhoot utaroon
+Chodne ke baad tujhe jutey maroon
+Tere mooh main apna lauda dey key
+Moot maroon
+(Honey Singh & Baadshah)
+
+Kenday pechayian pindaan ney teree mari
+Saaday lun ney we khichee ey tyaari
+Fudi teri aj ley kay jaoon
+Jey nai liti tey main jatt na kwahoon
+
+Kenday pechayian pindaan ney teree mari
+Saaday lun ney we khichee ey tyaari
+Fudi teri aj ley kay jaoon
+Jey nai liti tey main jatt na kwahoon
+
+Kenday pechayian pindaan ney teree mari
+Saaday lun ney we khichee ey tyaari
+Fudi teri aj ley kay jaoon
+Jey nai liti tey main jatt na kwahoon
+
+Kenday pechayian pindaan ney teree mari
+Saaday lun ney we khichee ey tyaari
+Fudi teri aj ley kay jaoon
+Jey nai liti tey main jatt na kwahoon
+🍆🍆🍆🍆🍆🍆🍆💦💦💦💦💦💦💦💦 */

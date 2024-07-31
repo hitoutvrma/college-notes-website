@@ -1,0 +1,13 @@
+/* global.css */
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --background-color: #ecf0f1;
+    --text-color: #black;
+    --border-radius:20px;
+    --font-heading-color: '#003300';
+    --lighter-color:'#e0e6fd';
+  }
+  
