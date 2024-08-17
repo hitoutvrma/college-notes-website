@@ -1,0 +1,32 @@
+/* src/FAQ.css */
+.faq-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+  }
+  
+  .faq-list {
+    margin-top: 20px;
+    color: white;
+    
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    color: white;
+  }
+  
+  .faq-question {
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .faq-answer {
+    margin-top: 5px;
+    color: white;
+    padding-left: 20px;
+  }
+  

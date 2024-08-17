@@ -1,0 +1,103 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+body {
+  margin: 0;
+  background-color: #191919;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+/* src/App.css */
+body {
+  font-family: 'Playwrite AR', cursive;;
+  /* font-size: 400px; */
+}
+
+.custom-font {
+  font-family:  sans-serif;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+body {
+  position: relative;
+  overflow: hidden; /* Prevents any overflow from the flare effect */
+}
+
+body::before, body::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1; /* Ensure it stays behind other content */
+  background: radial-gradient(circle, rgba(198, 20, 20, 0.6) 0%, transparent 50%);
+  animation: flare 3s infinite;
+}
+
+body::after {
+  background: radial-gradient(circle, rgba(20, 20, 198, 0.6) 0%, transparent 50%);
+  top: auto;
+  left: auto;
+  bottom: 10%;
+  right: 10%;
+}
+
+/* Additional flare effect with animation */
+@keyframes flare {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1); /* Slightly adjusted scale */
+    opacity: 0.75; /* Slightly adjusted opacity */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body::before, body::after {
+    top: 10%;
+    left: 10%;
+    width: 70%;
+    height: 70%;
+    background: radial-gradient(circle, rgba(198, 20, 20, 0.5) 0%, transparent 40%);
+  }
+  body::after {
+    background: radial-gradient(circle, rgba(20, 20, 198, 0.5) 0%, transparent 40%);
+    top: auto;
+    left: auto;
+    bottom: 10%;
+    right: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  body::before, body::after {
+    top: 15%;
+    left: 15%;
+    width: 90%;
+    height: 90%;
+    background: radial-gradient(circle, rgba(198, 20, 20, 0.4) 0%, transparent 20%);
+  }
+  body::after {
+    background: radial-gradient(circle, rgba(20, 20, 198, 0.4) 0%, transparent 20%);
+    top: auto;
+    left: auto;
+    bottom: 15%;
+    right: 15%;
+  }
+}

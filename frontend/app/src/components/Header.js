@@ -38,11 +38,17 @@ export default function Header() {
   };
   return (
     <div>
+                  <div class="navbar-toggle" id="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
       <div className='header'>
         <div className='logos'>
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+          bitCheat
+          {/* <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
             <path d="M12 0l3.09 6.26L22 7.27l-5 4.87L18.18 22 12 18.54 5.82 22 7 12.14l-5-4.87 6.91-1.01L12 0z" />
-          </svg>
+          </svg> */}
         </div>
         <div className="header-buttons">
           

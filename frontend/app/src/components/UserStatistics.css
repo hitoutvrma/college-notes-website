@@ -1,0 +1,61 @@
+
+
+.statistics-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    transition: transform 0.3s;
+}
+
+.statistics-container:hover {
+    transform: scale(1.02);
+}
+
+.statistic {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.statistic:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.statistic h2 {
+    font-size: 3rem;
+    color: #333;
+    margin: 0;
+}
+
+.statistic p {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+/* button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+} */
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}

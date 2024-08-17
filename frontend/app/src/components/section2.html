@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playwrite+AR:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        margin: 0;
+        font-family: 'Prompt', sans-serif;
+        color:white;
+        background: #202731;
+    }
+    section{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+        padding: 100px 20vw;
+    }
+
+    .blue{
+        background: blue;
+    }
+    .red{
+        background: red;
+    }
+    .green{
+        background: green;
+    }
+    .curve{
+        position: absolute;
+        height: 225px;
+        width: 100%;
+        bottom: 0;
+    }
+    .curve::before{
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: #202731;
+        transform: translate(85%,60%);
+    }
+    .curve::after{
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: green;
+        transform: translate(-4%,40%);
+        z-index: -1;
+
+    }
+</style>
+</head>
+<body>
+    <section class="green">
+        <h1>Nice curve</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sapiente! Aliquid aperiam temporibus, quia deserunt commodi totam sequi dolore officiis vero id sunt. Veritatis ratione obcaecati neque harum? Maiores, aut.</p>
+        <div class="curve">
+
+        </div>
+    </section>
+    <section>
+        <h1>Nice curve</h1>
+        <p>Esse quibusdam adipisci iure, veniam incidunt voluptate ducimus odio earum assumenda cupiditate mollitia nostrum fugiat eaque culpa harum soluta a aut unde quod quos aperiam dolorum exercitationem facere! Hic, doloremque!</p>
+    </section>
+    <section>
+        <h1>Nice curve</h1>
+        <p>Tempora, nobis distinctio? Enim animi nihil, accusantium harum praesentium numquam molestias ipsum fugiat distinctio est in cum aliquam! Earum voluptates dignissimos quibusdam a in perspiciatis voluptatem architecto error, illum numquam?</p>
+    </section>
+    <section>
+        <h1>Nice curve</h1>
+        <p>Culpa tenetur accusantium laboriosam nam itaque ad expedita corporis voluptatem est velit animi, consequuntur nemo labore voluptatibus reiciendis dolorum neque vel odit atque veniam ipsum porro! Blanditiis eius fuga accusantium.</p>
+    </section>
+    <section>
+        <h1>Nice curve</h1>
+        <p>Tempora illum velit at quae unde. Mollitia numquam assumenda recusandae perferendis blanditiis modi pariatur. Possimus ut nostrum at libero similique ipsum voluptatum! Saepe quisquam illo vitae aliquid, vero autem ab.</p>
+    </section>
+    <section>
+        <h1>Nice curve</h1>
+        <p>Laborum consectetur, quas commodi expedita inventore, voluptates atque repellendus nostrum ut sint tenetur exercitationem, totam nemo ipsa non. Incidunt aspernatur eaque id fugiat autem. Earum porro voluptate impedit soluta eos.</p>
+    </section>
+    <section>
+        <h1>Nice curve</h1>
+        <p>Aspernatur, velit debitis. Ratione dignissimos dolore facilis esse blanditiis maiores nemo nihil corrupti non quos repudiandae veritatis officiis, dolorum aliquam magnam quis nulla nesciunt deserunt nam, molestias velit iusto. Sequi.</p>
+    </section>
+    <section>
+        <h1>Nice curve</h1>
+        <p>Sed recusandae fugiat illum eligendi eos. Similique sunt pariatur asperiores libero tenetur repudiandae nostrum fuga obcaecati, saepe laborum! Voluptatem harum atque nam, in magni deserunt consectetur nisi earum deleniti est.</p>
+    </section>
+</body>
+</html>

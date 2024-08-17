@@ -7,7 +7,7 @@ const LoginButton = () => {
 
   return (<div>
         {isAuthenticated ?(<button onClick={(e) => logout()} id="login">logout</button>):
-      <button id="login" onClick={() => loginWithRedirect()}>login</button>}
+      <button class="button" onClick={() => loginWithRedirect()}>login</button>}
     </div>
       );
 };

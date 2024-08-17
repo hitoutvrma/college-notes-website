@@ -4,24 +4,25 @@ import { useEffect } from 'react';
 import './css/global.css';
 
 const colorCombinations = [
-  {
-    '--primary-color': '#ccd6fb', //same as background
-    '--secondary-color': '#b8c1e2', //darker color used for cards
-    '--lighter-color':'#e0e6fd',
-    '--font-heading-color': '#003300',
-    '--background-color': '#ccd6fb',
-    '--text-color': '#292b32',
-    '--border-radius':'0px'
-  },
+  // {
+  //   // '--primary-color': '#ccd6fb', //same as background
+  //   // '--secondary-color': '#b8c1e2', //darker color used for cards
+  //   // '--lighter-color':'#e0e6fd',
+  //   // '--font-heading-color': '#003300',
+  //   // '--background-color': '#ccd6fb',
+  //   // '--text-color': '#292b32',
+  //   // '--border-radius':'0px'
+  // },
   {
     '--primary-color': '#FFFFFF',
     '--secondary-color': '#FFFFFF',
     '--lighter-color':'#F5F5F5',
     '--accent-color': '#e67e22',
     '--background-color': '#FFFFFF',
-    '--text-color': '#36454F',
+    '--text-color': 'black',
     '--border-radius':'10px',
-    '--button-color':'whitesmoke'
+    '--button-color':'whitesmoke',
+    '--semester-button':'white'
   },
   {
     '--primary-color': '#606060',
@@ -29,9 +30,10 @@ const colorCombinations = [
     '--lighter-color':'#F5F5F5',
     '--accent-color': '#e67e22',
     '--background-color': '#808080',
-    '--text-color': '#36454F',
+    '--text-color': 'white',
     '--border-radius':'10px',
-    '--button-color':'whitesmoke'
+    '--button-color':'whitesmoke',
+    '--semester-button':'#808080'
   },
 ];
 const applyColors = (colorIndex) => {
@@ -61,7 +63,8 @@ const Color = () => {
 
 
   return (
-      <button onClick={toggleColors}>
+    
+      <button className="button" onClick={toggleColors}>
         Tog
       </button>
   );
