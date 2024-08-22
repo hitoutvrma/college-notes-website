@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+// const path= require("path")
 const cors = require("cors");
 const FeedbackPost = require("./models/FeedbackPost");
 const BlogPost = require("./models/BlogPost");
@@ -82,6 +83,11 @@ app.put('/api/blogs/:id', async (req, res) => {
       res.status(400).send(err);
     }
   });
+
+  // app.get("/",(req,res)=>{
+  //   app.use(express.static(path.resolve(__dirname,"frontend","build")));
+  //   res.sendFile(path.resolve(__dirname,"frontend","build","index.html"))
+  // })
 
 // Delete a blog post
 app.delete('/api/blogs/:id', async (req, res) => {
